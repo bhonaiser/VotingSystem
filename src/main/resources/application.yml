@@ -1,0 +1,10 @@
+server:
+  port: ${SicrediApplication:56000}
+  spring:
+    config:
+      activate:
+        on-profile: 'local'
+  data:
+    mongodb:
+      uri: 'mongodb://localhost:27017/SicrediVotingSystem'
+      auto-index-creation: true
